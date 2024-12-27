@@ -4,7 +4,7 @@ class Entity
 {
 public:
 	Entity();
-	~Entity();
+	virtual ~Entity();
 
 	void Move(int xAmount, int yAmount);
 
