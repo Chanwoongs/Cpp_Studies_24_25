@@ -6,6 +6,8 @@ class Vector2
 {
 public:
 	Vector2();
+	Vector2(float x = 0.0f, float y = 0.0f); // 기본 생성자와 모호
+	Vector2(float x, float y = 0.0f); 
 	Vector2(float x, float y);
 
 	// 더하기
