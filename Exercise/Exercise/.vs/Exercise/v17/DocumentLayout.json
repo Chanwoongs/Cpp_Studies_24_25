@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Exercise\\Exercise\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2E0D3F0-3D6E-47E6-9E38-B3653EB3CF99}|Exercise1\\Exercise1.vcxproj|C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Exercise\\Exercise\\Exercise1\\levelTest.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2E0D3F0-3D6E-47E6-9E38-B3653EB3CF99}|Exercise1\\Exercise1.vcxproj|solutionrelative:Exercise1\\levelTest.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "levelTest.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Exercise\\Exercise\\Exercise1\\levelTest.cpp",
+              "RelativeDocumentMoniker": "Exercise1\\levelTest.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Exercise\\Exercise\\Exercise1\\levelTest.cpp",
+              "RelativeToolTip": "Exercise1\\levelTest.cpp",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAkwFgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-27T08:15:12.488Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
