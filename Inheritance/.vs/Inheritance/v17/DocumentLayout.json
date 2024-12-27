@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{946552FA-5616-47FD-A82C-7DBAFAC62C03}|OperatorOverloading\\OperatorOverloading.vcxproj|C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\OperatorOverloading\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{946552FA-5616-47FD-A82C-7DBAFAC62C03}|OperatorOverloading\\OperatorOverloading.vcxproj|solutionrelative:OperatorOverloading\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{946552FA-5616-47FD-A82C-7DBAFAC62C03}|OperatorOverloading\\OperatorOverloading.vcxproj|C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\OperatorOverloading\\Vector2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{946552FA-5616-47FD-A82C-7DBAFAC62C03}|OperatorOverloading\\OperatorOverloading.vcxproj|solutionrelative:OperatorOverloading\\Vector2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{946552FA-5616-47FD-A82C-7DBAFAC62C03}|OperatorOverloading\\OperatorOverloading.vcxproj|C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\OperatorOverloading\\Vector2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{946552FA-5616-47FD-A82C-7DBAFAC62C03}|OperatorOverloading\\OperatorOverloading.vcxproj|solutionrelative:OperatorOverloading\\Vector2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E69F4A3B-3D27-4BF5-9375-652BB3D6AD39}|VirtualFunction\\VirtualFunction.vcxproj|C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\VirtualFunction\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E69F4A3B-3D27-4BF5-9375-652BB3D6AD39}|VirtualFunction\\VirtualFunction.vcxproj|solutionrelative:VirtualFunction\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E69F4A3B-3D27-4BF5-9375-652BB3D6AD39}|VirtualFunction\\VirtualFunction.vcxproj|C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\VirtualFunction\\Entity\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E69F4A3B-3D27-4BF5-9375-652BB3D6AD39}|VirtualFunction\\VirtualFunction.vcxproj|solutionrelative:VirtualFunction\\Entity\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -17,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E69F4A3B-3D27-4BF5-9375-652BB3D6AD39}|VirtualFunction\\VirtualFunction.vcxproj|C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\VirtualFunction\\Entity\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E69F4A3B-3D27-4BF5-9375-652BB3D6AD39}|VirtualFunction\\VirtualFunction.vcxproj|solutionrelative:VirtualFunction\\Entity\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E69F4A3B-3D27-4BF5-9375-652BB3D6AD39}|VirtualFunction\\VirtualFunction.vcxproj|C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\VirtualFunction\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E69F4A3B-3D27-4BF5-9375-652BB3D6AD39}|VirtualFunction\\VirtualFunction.vcxproj|solutionrelative:VirtualFunction\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E69F4A3B-3D27-4BF5-9375-652BB3D6AD39}|VirtualFunction\\VirtualFunction.vcxproj|C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\VirtualFunction\\Entity\\Entity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -74,11 +86,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Vector2.h",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\OperatorOverloading\\Vector2.h",
+              "RelativeDocumentMoniker": "OperatorOverloading\\Vector2.h",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\OperatorOverloading\\Vector2.h",
+              "RelativeToolTip": "OperatorOverloading\\Vector2.h",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAkwBEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-27T06:16:53.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\OperatorOverloading\\main.cpp",
+              "RelativeDocumentMoniker": "OperatorOverloading\\main.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\OperatorOverloading\\main.cpp",
+              "RelativeToolTip": "OperatorOverloading\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-27T06:17:00.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Vector2.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\OperatorOverloading\\Vector2.cpp",
+              "RelativeDocumentMoniker": "OperatorOverloading\\Vector2.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\OperatorOverloading\\Vector2.cpp",
+              "RelativeToolTip": "OperatorOverloading\\Vector2.cpp",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-27T06:32:46.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Player.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\VirtualFunction\\Entity\\Player.cpp",
               "RelativeDocumentMoniker": "VirtualFunction\\Entity\\Player.cpp",
@@ -91,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Entity.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\VirtualFunction\\Entity\\Entity.cpp",
               "RelativeDocumentMoniker": "VirtualFunction\\Entity\\Entity.cpp",
@@ -99,12 +150,11 @@
               "RelativeToolTip": "VirtualFunction\\Entity\\Entity.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-27T05:52:21.838Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-27T05:52:21.838Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "IMoveable.h",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\VirtualFunction\\Entity\\IMoveable.h",
               "RelativeDocumentMoniker": "VirtualFunction\\Entity\\IMoveable.h",
@@ -112,12 +162,11 @@
               "RelativeToolTip": "VirtualFunction\\Entity\\IMoveable.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-27T05:47:02.826Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-27T05:47:02.826Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Player.h",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\VirtualFunction\\Entity\\Player.h",
               "RelativeDocumentMoniker": "VirtualFunction\\Entity\\Player.h",
@@ -125,12 +174,11 @@
               "RelativeToolTip": "VirtualFunction\\Entity\\Player.h",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-27T05:14:45.099Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-27T05:14:45.099Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Entity.h",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\VirtualFunction\\Entity\\Entity.h",
               "RelativeDocumentMoniker": "VirtualFunction\\Entity\\Entity.h",
@@ -138,25 +186,24 @@
               "RelativeToolTip": "VirtualFunction\\Entity\\Entity.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-27T05:13:55.846Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-27T05:13:55.846Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\VirtualFunction\\main.cpp",
               "RelativeDocumentMoniker": "VirtualFunction\\main.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\VirtualFunction\\main.cpp",
               "RelativeToolTip": "VirtualFunction\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-27T05:13:01.126Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Point.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\IS_A\\Point.cpp",
               "RelativeDocumentMoniker": "IS_A\\Point.cpp",
@@ -168,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Circle.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\IS_A\\Circle.cpp",
               "RelativeDocumentMoniker": "IS_A\\Circle.cpp",
@@ -180,7 +227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\IS_A\\main.cpp",
               "RelativeDocumentMoniker": "IS_A\\main.cpp",
@@ -192,7 +239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "Circle.h",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\IS_A\\Circle.h",
               "RelativeDocumentMoniker": "IS_A\\Circle.h",
@@ -204,7 +251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Point.h",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\IS_A\\Point.h",
               "RelativeDocumentMoniker": "IS_A\\Point.h",
@@ -216,7 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\Demo\\main.cpp",
               "RelativeDocumentMoniker": "Demo\\main.cpp",
@@ -229,7 +276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "Player.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\Demo\\Entity\\Player.cpp",
               "RelativeDocumentMoniker": "Demo\\Entity\\Player.cpp",
@@ -241,7 +288,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "Player.h",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\Demo\\Entity\\Player.h",
               "RelativeDocumentMoniker": "Demo\\Entity\\Player.h",
@@ -253,7 +300,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "Entity.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\Demo\\Entity\\Entity.cpp",
               "RelativeDocumentMoniker": "Demo\\Entity\\Entity.cpp",
@@ -265,7 +312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "Entity.h",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\Demo\\Entity\\Entity.h",
               "RelativeDocumentMoniker": "Demo\\Entity\\Entity.h",

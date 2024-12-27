@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HAS_A", "HAS_A\HAS_A.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VirtualFunction", "VirtualFunction\VirtualFunction.vcxproj", "{E69F4A3B-3D27-4BF5-9375-652BB3D6AD39}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OperatorOverloading", "OperatorOverloading\OperatorOverloading.vcxproj", "{946552FA-5616-47FD-A82C-7DBAFAC62C03}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{E69F4A3B-3D27-4BF5-9375-652BB3D6AD39}.Release|x64.Build.0 = Release|x64
 		{E69F4A3B-3D27-4BF5-9375-652BB3D6AD39}.Release|x86.ActiveCfg = Release|Win32
 		{E69F4A3B-3D27-4BF5-9375-652BB3D6AD39}.Release|x86.Build.0 = Release|Win32
+		{946552FA-5616-47FD-A82C-7DBAFAC62C03}.Debug|x64.ActiveCfg = Debug|x64
+		{946552FA-5616-47FD-A82C-7DBAFAC62C03}.Debug|x64.Build.0 = Debug|x64
+		{946552FA-5616-47FD-A82C-7DBAFAC62C03}.Debug|x86.ActiveCfg = Debug|Win32
+		{946552FA-5616-47FD-A82C-7DBAFAC62C03}.Debug|x86.Build.0 = Debug|Win32
+		{946552FA-5616-47FD-A82C-7DBAFAC62C03}.Release|x64.ActiveCfg = Release|x64
+		{946552FA-5616-47FD-A82C-7DBAFAC62C03}.Release|x64.Build.0 = Release|x64
+		{946552FA-5616-47FD-A82C-7DBAFAC62C03}.Release|x86.ActiveCfg = Release|Win32
+		{946552FA-5616-47FD-A82C-7DBAFAC62C03}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
