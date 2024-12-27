@@ -19,6 +19,8 @@ int main()
 	//Vector2 result = position.operator*(speed);
 	Vector2 result = position * speed;
 
+	position += speed;
+
 	std::cout << position;
 	std::cout << speed;
 	std::cout << result;

@@ -33,6 +33,12 @@ Vector2 Vector2::operator*(const Vector2& other)
 	// return this->Multiply(other);
 }
 
+void Vector2::operator+=(const Vector2& other)
+{
+	x += other.GetX();
+	y += other.GetY();
+}
+
 float Vector2::GetX() const
 {
 	return x;

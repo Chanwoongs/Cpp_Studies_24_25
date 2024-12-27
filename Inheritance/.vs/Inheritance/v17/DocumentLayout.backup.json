@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{946552FA-5616-47FD-A82C-7DBAFAC62C03}|OperatorOverloading\\OperatorOverloading.vcxproj|C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\OperatorOverloading\\Vector2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{946552FA-5616-47FD-A82C-7DBAFAC62C03}|OperatorOverloading\\OperatorOverloading.vcxproj|solutionrelative:OperatorOverloading\\Vector2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{946552FA-5616-47FD-A82C-7DBAFAC62C03}|OperatorOverloading\\OperatorOverloading.vcxproj|C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\OperatorOverloading\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{946552FA-5616-47FD-A82C-7DBAFAC62C03}|OperatorOverloading\\OperatorOverloading.vcxproj|solutionrelative:OperatorOverloading\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{946552FA-5616-47FD-A82C-7DBAFAC62C03}|OperatorOverloading\\OperatorOverloading.vcxproj|C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\OperatorOverloading\\Vector2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{946552FA-5616-47FD-A82C-7DBAFAC62C03}|OperatorOverloading\\OperatorOverloading.vcxproj|solutionrelative:OperatorOverloading\\Vector2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{946552FA-5616-47FD-A82C-7DBAFAC62C03}|OperatorOverloading\\OperatorOverloading.vcxproj|C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\OperatorOverloading\\Vector2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{946552FA-5616-47FD-A82C-7DBAFAC62C03}|OperatorOverloading\\OperatorOverloading.vcxproj|solutionrelative:OperatorOverloading\\Vector2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E69F4A3B-3D27-4BF5-9375-652BB3D6AD39}|VirtualFunction\\VirtualFunction.vcxproj|C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\VirtualFunction\\Entity\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -86,43 +86,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Vector2.h",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\OperatorOverloading\\Vector2.h",
               "RelativeDocumentMoniker": "OperatorOverloading\\Vector2.h",
               "ToolTip": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\OperatorOverloading\\Vector2.h",
               "RelativeToolTip": "OperatorOverloading\\Vector2.h",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-12-27T06:16:53.414Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\OperatorOverloading\\main.cpp",
               "RelativeDocumentMoniker": "OperatorOverloading\\main.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\OperatorOverloading\\main.cpp",
               "RelativeToolTip": "OperatorOverloading\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-27T06:17:00.852Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Vector2.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\OperatorOverloading\\Vector2.cpp",
               "RelativeDocumentMoniker": "OperatorOverloading\\Vector2.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Inheritance\\OperatorOverloading\\Vector2.cpp",
               "RelativeToolTip": "OperatorOverloading\\Vector2.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACUAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-27T06:32:46.006Z",
               "EditorCaption": ""
@@ -137,8 +137,7 @@
               "RelativeToolTip": "VirtualFunction\\Entity\\Player.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-27T05:53:55.303Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-27T05:53:55.303Z"
             },
             {
               "$type": "Document",
