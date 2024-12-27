@@ -1,8 +1,7 @@
 #include "Player.h"
 #include <iostream>
 
-Player::Player(const char* name)
-	: Entity() // 기본 생성자의 경우 생략 가능
+Player::Player(const char* name) // 기본 생성자의 경우 생략 가능
 {
 	std::cout << "Player() called\n";
 

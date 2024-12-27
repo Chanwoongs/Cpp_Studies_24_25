@@ -5,13 +5,13 @@
 
 int main()
 {
-	Entity* entity = new Entity();
-	std::cout << entity->GetName() << '\n';
+	/*Entity* entity = new Entity();
+	std::cout << entity->GetName() << '\n';*/
 
 	//Player* player = new Player("RonnieJ");
-	Entity* player = new Player("RonnieJ"); // Upcasting
+	IEntity* player = new Player("RonnieJ"); // Upcasting
 	std::cout << player->GetName() << '\n';
 
-	delete entity;
+	//delete entity;
 	delete player;
 }
