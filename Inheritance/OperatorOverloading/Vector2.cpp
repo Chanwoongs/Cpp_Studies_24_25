@@ -32,3 +32,13 @@ Vector2 Vector2::operator*(const Vector2& other)
 	return Vector2(x * other.x, y * other.y);
 	// return this->Multiply(other);
 }
+
+float Vector2::GetX() const
+{
+	return x;
+}
+
+float Vector2::GetY() const
+{
+	return y;
+}
