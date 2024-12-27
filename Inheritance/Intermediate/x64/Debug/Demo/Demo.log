@@ -1,4 +1,2 @@
-﻿  Entity.cpp
-  Player.cpp
-  코드를 생성하고 있습니다...
-  Demo.vcxproj -> C:\Users\user\Desktop\Cpp_Studies_24_25\Inheritance\Bin\x64\Debug\Demo\Demo.exe
+﻿MSVCRTD.lib(exe_main.obj) : error LNK2019: main"int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ) 함수에서 참조되는 확인할 수 없는 외부 기호
+C:\Users\user\Desktop\Cpp_Studies_24_25\Inheritance\Bin\x64\Debug\Demo\Demo.exe : fatal error LNK1120: 1개의 확인할 수 없는 외부 참조입니다.
