@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Exercise\\Exercise\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F6B01940-ACD7-4A7A-9872-D7DCC2F9231A}|AccountManager\\AccountManager.vcxproj|C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Exercise\\Exercise\\AccountManager\\Account.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F6B01940-ACD7-4A7A-9872-D7DCC2F9231A}|AccountManager\\AccountManager.vcxproj|solutionrelative:AccountManager\\Account.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6B01940-ACD7-4A7A-9872-D7DCC2F9231A}|AccountManager\\AccountManager.vcxproj|C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Exercise\\Exercise\\AccountManager\\Account.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F6B01940-ACD7-4A7A-9872-D7DCC2F9231A}|AccountManager\\AccountManager.vcxproj|solutionrelative:AccountManager\\Account.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6B01940-ACD7-4A7A-9872-D7DCC2F9231A}|AccountManager\\AccountManager.vcxproj|C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Exercise\\Exercise\\AccountManager\\Bank.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F6B01940-ACD7-4A7A-9872-D7DCC2F9231A}|AccountManager\\AccountManager.vcxproj|solutionrelative:AccountManager\\Bank.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6B01940-ACD7-4A7A-9872-D7DCC2F9231A}|AccountManager\\AccountManager.vcxproj|C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Exercise\\Exercise\\AccountManager\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F6B01940-ACD7-4A7A-9872-D7DCC2F9231A}|AccountManager\\AccountManager.vcxproj|solutionrelative:AccountManager\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2E0D3F0-3D6E-47E6-9E38-B3653EB3CF99}|Exercise1\\Exercise1.vcxproj|C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Exercise\\Exercise\\Exercise1\\levelTest.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2E0D3F0-3D6E-47E6-9E38-B3653EB3CF99}|Exercise1\\Exercise1.vcxproj|solutionrelative:Exercise1\\levelTest.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -19,12 +35,64 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Account.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Exercise\\Exercise\\AccountManager\\Account.cpp",
+              "RelativeDocumentMoniker": "AccountManager\\Account.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Exercise\\Exercise\\AccountManager\\Account.cpp",
+              "RelativeToolTip": "AccountManager\\Account.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-27T08:55:03.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Bank.h",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Exercise\\Exercise\\AccountManager\\Bank.h",
+              "RelativeDocumentMoniker": "AccountManager\\Bank.h",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Exercise\\Exercise\\AccountManager\\Bank.h",
+              "RelativeToolTip": "AccountManager\\Bank.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-27T08:49:44.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Account.h",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Exercise\\Exercise\\AccountManager\\Account.h",
+              "RelativeDocumentMoniker": "AccountManager\\Account.h",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Exercise\\Exercise\\AccountManager\\Account.h",
+              "RelativeToolTip": "AccountManager\\Account.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-27T08:49:32.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Exercise\\Exercise\\AccountManager\\main.cpp",
+              "RelativeDocumentMoniker": "AccountManager\\main.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Exercise\\Exercise\\AccountManager\\main.cpp",
+              "RelativeToolTip": "AccountManager\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-27T08:49:04.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "levelTest.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Exercise\\Exercise\\Exercise1\\levelTest.cpp",
               "RelativeDocumentMoniker": "Exercise1\\levelTest.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\Cpp_Studies_24_25\\Exercise\\Exercise\\Exercise1\\levelTest.cpp",
               "RelativeToolTip": "Exercise1\\levelTest.cpp",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAkwFgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAkwFYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-27T08:15:12.488Z",
               "EditorCaption": ""
