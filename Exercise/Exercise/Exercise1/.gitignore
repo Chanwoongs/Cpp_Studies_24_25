@@ -31,9 +31,5 @@
 *.out
 *.app
 
-*.vcxproj
-*.filters
-*.user
-
 # Folders
 x64/
