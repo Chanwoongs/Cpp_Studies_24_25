@@ -87,3 +87,36 @@ bool HasSameCharacter(const char* testString, int stringLength)
     }
     return false;
 }
+
+bool HasSameCharacter(const char* testString, int stringLength)
+{
+    bool arr[26] = { 0, };
+
+    for (int i = 0; i < stringLength; i++)
+    {
+        if (arr[i - 'a'])
+        {
+            return true;
+        }
+        arr[i - 'a'] = true;
+    }
+
+    return false;
+}
+
+bool HasSameCharacter(const char* testString, int stringLength)
+{
+    int bitSet = 0;
+
+    for (int i = 0; i < stringLength; i++)
+    {
+        int value = testString[i] - 'a';
+        if ((bitSet & (1 << value)) > 0)
+        {
+            return true;
+        }
+        bitSet |= (1 << value);
+    }
+
+    return false;
+}
