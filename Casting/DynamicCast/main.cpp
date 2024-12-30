@@ -1,7 +1,12 @@
 ﻿#include <iostream>
 
+#define RTTI(name) \
+	public:			\
+		virtual const char* ClassName() const { return #name; }
+
 class Actor
 {
+	RTTI(Actor)
 public:
 	virtual void Print()
 	{
@@ -14,7 +19,7 @@ public:
 
 class Player : public Actor
 {
-
+	RTTI(Player)
 };
 
 int main()
