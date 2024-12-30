@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicCast", "DynamicCast.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Template", "..\Template\Template.vcxproj", "{AA971D62-82D1-4300-9A31-F6691DFB9F4F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClassTemplate", "..\ClassTemplate\ClassTemplate.vcxproj", "{F03683FC-DACF-4898-9E7B-E02BAD32B97D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{AA971D62-82D1-4300-9A31-F6691DFB9F4F}.Release|x64.Build.0 = Release|x64
 		{AA971D62-82D1-4300-9A31-F6691DFB9F4F}.Release|x86.ActiveCfg = Release|Win32
 		{AA971D62-82D1-4300-9A31-F6691DFB9F4F}.Release|x86.Build.0 = Release|Win32
+		{F03683FC-DACF-4898-9E7B-E02BAD32B97D}.Debug|x64.ActiveCfg = Debug|x64
+		{F03683FC-DACF-4898-9E7B-E02BAD32B97D}.Debug|x64.Build.0 = Debug|x64
+		{F03683FC-DACF-4898-9E7B-E02BAD32B97D}.Debug|x86.ActiveCfg = Debug|Win32
+		{F03683FC-DACF-4898-9E7B-E02BAD32B97D}.Debug|x86.Build.0 = Debug|Win32
+		{F03683FC-DACF-4898-9E7B-E02BAD32B97D}.Release|x64.ActiveCfg = Release|x64
+		{F03683FC-DACF-4898-9E7B-E02BAD32B97D}.Release|x64.Build.0 = Release|x64
+		{F03683FC-DACF-4898-9E7B-E02BAD32B97D}.Release|x86.ActiveCfg = Release|Win32
+		{F03683FC-DACF-4898-9E7B-E02BAD32B97D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
