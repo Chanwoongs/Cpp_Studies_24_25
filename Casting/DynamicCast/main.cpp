@@ -69,4 +69,19 @@ int main()
 	// typeid
 	const type_info& info = typeid(actorPoint);
 	std::cout << info.name() << '\n';
+
+
+	std::cout << actor->ClassName() << '\n';
+	std::cout << player->ClassName() << '\n';
+	std::cout << actorPoint->ClassName() << '\n';
+
+	// 타입 비교
+	if (strcmp(actor->ClassName(), player->ClassName()) == 0)
+	{
+		std::cout << "같은 타입\n";
+	}
+	else
+	{
+		std::cout << "다른 타입\n";
+	}
 }
