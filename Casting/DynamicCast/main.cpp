@@ -60,4 +60,8 @@ int main()
 	{
 		std::cout << "형변환 실패\n";
 	}
+	
+	// typeid
+	const type_info& info = typeid(actorPoint);
+	std::cout << info.name() << '\n';
 }
