@@ -3,11 +3,18 @@
 #include <iostream>
 #ifdef _DEBUG
 #define DBG_NEW new ( _NORMAL_BLOCK , __FILE__ , __LINE__ )
-// Replace _NORMAL_BLOCK with _CLIENT_BLOCK if you want the
-// allocations to be of _CLIENT_BLOCK type
 #else
 #define DBG_NEW new
 #endif
+
+enum class AccountType
+{
+	Normal = 0,
+	Credit,
+	Donation,
+	Length
+};
+
 class Account
 {
 public:
@@ -28,12 +35,12 @@ public:
 	const int GetId() const { return id; }
 	const char* GetName() const { return name; }
 
-	void Deposit(int amount);
+	virtual void Deposit(int amount);
 	void Withdrawal(int amount);
 
 	int CheckBalance();
 
-private:
+protected:
 	int id;
 	char* name;
 	int nameLength;

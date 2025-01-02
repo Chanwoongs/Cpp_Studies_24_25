@@ -1,10 +1,21 @@
 #include "Bank.h"
+#include "CreditAccount.h"
+#include "DonationAccount.h"
+
+#ifdef _DEBUG
+#define new new ( _NORMAL_BLOCK , __FILE__ , __LINE__ )
+#endif
 
 Bank::Bank()
 {
 	this->id = 0;
 
 	accounts = new Account*[100];
+
+	for (int i = 0; i < 100; i++)
+	{
+		accounts[i] = nullptr;
+	}
 }
 
 Bank::~Bank()
@@ -44,9 +55,24 @@ void Bank::WithDraw(int id, int amount)
 	}
 }
 
-void Bank::CreateAccount(const char* name)
+void Bank::CreateAccount(AccountType accountType, const char* name)
 {
-	Account* account = new Account(id, name);
+	Account* account = nullptr;
+
+	switch (accountType)
+	{
+	case AccountType::Normal:
+		account = new Account(id, name);
+		break;
+	case AccountType::Credit:
+		account = new CreditAccount(id, name);
+		break;
+	case AccountType::Donation:
+		account = new DonationAccount(id, name);
+		break;
+	default:
+		break;
+	}
 	this->accounts[id] = account;
 
 	std::cout << this->accounts[id]->GetName() << " °í°´´ÔÀÇ " << id << "¹ø °èÁÂ°¡ »ý¼ºµÇ¾ú½À´Ï´Ù\n";

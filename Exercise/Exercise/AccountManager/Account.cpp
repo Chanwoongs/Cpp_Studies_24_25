@@ -1,6 +1,10 @@
 #include "Account.h"
 #include <iostream>
 
+#ifdef _DEBUG
+#define new new ( _NORMAL_BLOCK , __FILE__ , __LINE__ )
+#endif
+
 Account::Account()
     : id(-1), nameLength(-1), name(nullptr), balance(0)
 {
@@ -16,7 +20,10 @@ Account::Account(int id, const char* name)
 
 Account::~Account()
 {
-    delete[] name;
+    if (name != nullptr)
+    {
+        delete[] name;
+    }
 }
 
 void Account::Deposit(int amount)

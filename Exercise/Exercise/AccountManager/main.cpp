@@ -1,6 +1,11 @@
 ﻿#include <iostream>
 
 #define _CRTDBG_MAP_ALLOC
+
+#ifdef _DEBUG
+#define new new ( _NORMAL_BLOCK , __FILE__ , __LINE__ )
+#endif
+
 #include <stdlib.h>
 #include <crtdbg.h>
 
@@ -33,10 +38,15 @@ int main()
 
 		if (input == 1)
 		{
+			int accountType;
+			std::cout << "계좌 종류를 입력하세요(0. 일반, 1. 이자, 2. 기부) : ";
+			std::cin >> accountType;
+			std::cin.ignore();
+			
 			char name[100];
 			std::cout << "이름을 입력하세요 : ";
 			std::cin.getline(name, 100);
-			bank->CreateAccount(name);
+			bank->CreateAccount((AccountType)accountType, name);
 		}
 		else if (input == 2)
 		{
@@ -65,6 +75,9 @@ int main()
 			std::cout << "잘못 입력하셨습니다.\n";
 		}
 	}
+
+	delete bank;
+
 	_CrtSetReportMode(_CRT_WARN, _CRTDBG_MODE_DEBUG);
 	_CrtDumpMemoryLeaks();
 }
