@@ -1,5 +1,9 @@
 ﻿#include <iostream>
 
+#define _CRTDBG_MAP_ALLOC
+#include <stdlib.h>
+#include <crtdbg.h>
+
 #include "Bank.h"
 #include "Account.h"
 
@@ -52,7 +56,7 @@ int main()
 		{
 			bank->Inquire();
 		}
-		else if (input == 'q')
+		else if (input == 5)
 		{
 			break;
 		}
@@ -61,4 +65,6 @@ int main()
 			std::cout << "잘못 입력하셨습니다.\n";
 		}
 	}
+	_CrtSetReportMode(_CRT_WARN, _CRTDBG_MODE_DEBUG);
+	_CrtDumpMemoryLeaks();
 }
