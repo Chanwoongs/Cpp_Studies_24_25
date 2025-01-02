@@ -74,6 +74,8 @@ int main()
 		{
 			std::cout << "잘못 입력하셨습니다.\n";
 		}
+
+		std::cout << "\n\n";
 	}
 
 	delete bank;

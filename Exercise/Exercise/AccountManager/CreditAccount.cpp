@@ -9,5 +9,8 @@ void CreditAccount::Deposit(int amount)
 
 void CreditAccount::AddInterest()
 {
-	this->balance += (int)balance * 0.01;
+	int interest = (int)balance * 0.01;
+	this->balance += interest;
+	
+	std::cout << "저축한 이자 : " << interest << '\n';
 }
