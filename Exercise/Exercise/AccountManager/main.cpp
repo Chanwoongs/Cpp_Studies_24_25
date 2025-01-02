@@ -1,7 +1,12 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 #include "Bank.h"
 #include "Account.h"
+
+void ClearScreen()
+{
+	system("cls");
+}
 
 int main()
 {
@@ -9,7 +14,14 @@ int main()
 
 	while (true)
 	{
-		std::cout << "¿øÇÏ´Â ±â´ÉÀÇ ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ";
+		std::cout << "ì›í•˜ëŠ” ê¸°ëŠ¥ì˜ ë²ˆí˜¸ë¥¼ ìž…ë ¥í•˜ì„¸ìš”\n";
+
+		std::cout << "======ë©”ë‰´======\n";
+		std::cout << "1. ê³„ì¢Œ ê°œì„¤\n";
+		std::cout << "2. ìž…ê¸ˆ\n";
+		std::cout << "3. ì¶œê¸ˆ\n";
+		std::cout << "4. ìž”ì•¡ ì¡°íšŒ\n";
+		std::cout << "5. í”„ë¡œê·¸ëž¨ ì¢…ë£Œ\n";
 
 		int input;
 		std::cin >> input;
@@ -18,21 +30,21 @@ int main()
 		if (input == 1)
 		{
 			char name[100];
-			std::cout << "ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä : ";
+			std::cout << "ì´ë¦„ì„ ìž…ë ¥í•˜ì„¸ìš” : ";
 			std::cin.getline(name, 100);
 			bank->CreateAccount(name);
 		}
 		else if (input == 2)
 		{
 			int id, amount;
-			std::cout << "ÀÔ±ÝÇÏ½Ç °èÁÂÀÇ ID¿Í ±Ý¾×À» ÀÔ·ÂÇØÁÖ¼¼¿ä : ";
+			std::cout << "ìž…ê¸ˆí•˜ì‹¤ ê³„ì¢Œì˜ IDì™€ ê¸ˆì•¡ì„ ìž…ë ¥í•´ì£¼ì„¸ìš” : ";
 			std::cin >> id >> amount;
 			bank->Deposit(id, amount);
 		}
 		else if (input == 3)
 		{
 			int id, amount;
-			std::cout << "Ãâ±ÝÇÏ½Ç °èÁÂÀÇ ID¿Í ±Ý¾×À» ÀÔ·ÂÇØÁÖ¼¼¿ä : ";
+			std::cout << "ì¶œê¸ˆí•˜ì‹¤ ê³„ì¢Œì˜ IDì™€ ê¸ˆì•¡ì„ ìž…ë ¥í•´ì£¼ì„¸ìš” : ";
 			std::cin >> id >> amount;
 			bank->WithDraw(id, amount);
 		}
@@ -43,6 +55,10 @@ int main()
 		else if (input == 'q')
 		{
 			break;
+		}
+		else
+		{
+			std::cout << "ìž˜ëª» ìž…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤.\n";
 		}
 	}
 }

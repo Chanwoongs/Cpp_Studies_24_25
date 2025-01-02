@@ -8,7 +8,7 @@ public:
 	Bank();
 	~Bank();
 
-	Account** GetAccount()
+	Account** GetAccount() const 
 	{
 		return accounts;
 	}
