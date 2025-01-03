@@ -1,4 +1,10 @@
 ﻿  Account.cpp
-C:\Users\user\Desktop\Cpp_Studies_24_25\Exercise\Exercise\AccountManager\Account.cpp(7,24): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-MSVCRTD.lib(exe_main.obj) : error LNK2019: main"int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ) 함수에서 참조되는 확인할 수 없는 외부 기호
-C:\Users\user\Desktop\Cpp_Studies_24_25\Exercise\Exercise\x64\Debug\AccountManager.exe : fatal error LNK1120: 1개의 확인할 수 없는 외부 참조입니다.
+C:\Users\user\Desktop\Cpp_Studies_24_25\Exercise\Exercise\AccountManager\Account.cpp(16,30): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Bank.cpp
+  CreditAccount.cpp
+C:\Users\user\Desktop\Cpp_Studies_24_25\Exercise\Exercise\AccountManager\CreditAccount.cpp(12,32): warning C4244: '+=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  DonationAccount.cpp
+C:\Users\user\Desktop\Cpp_Studies_24_25\Exercise\Exercise\AccountManager\DonationAccount.cpp(7,21): warning C4244: '초기화 중': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  main.cpp
+  코드를 생성하고 있습니다...
+  AccountManager.vcxproj -> C:\Users\user\Desktop\Cpp_Studies_24_25\Exercise\Exercise\x64\Debug\AccountManager.exe
