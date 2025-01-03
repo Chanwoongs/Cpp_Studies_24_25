@@ -1,22 +1,28 @@
-#include <iostream>
+ï»¿#include <iostream>
+
+// í•¨ìˆ˜ í¬ì¸í„°
+void(*functionPointer)();
 
 int main()
 {
-	// Lambda ÇÔ¼ö (¹«¸í ÇÔ¼ö)
+	// Lambda í•¨ìˆ˜ (ë¬´ëª… í•¨ìˆ˜)
 	// 
-	// ¼±¾ğÇÏ¸é¼­ È£Ãâ
+	// ì„ ì–¸í•˜ë©´ì„œ í˜¸ì¶œ
 	[]() {std::cout << "Hello Lambda.\n";}();
 
-	// º¯¼ö¿¡ ÀúÀå
+	// ë³€ìˆ˜ì— ì €ì¥
 	int count = 0;
-	auto function = [&count]() -> float // ¸í½ÃÀû ¼±¾ğ
+	auto function = [&count]() -> float // ëª…ì‹œì  ì„ ì–¸
 		{
 			++count;
 			std::cout << "Hello Lambda.\n";
 			return 100;
 		};
-	// È£Ãâ
+	// í˜¸ì¶œ
 	auto returnValue = function();
+
+	functionPointer = []() {std::cout << "Hello" << '\n';};
+	functionPointer();
 
 	function();
 	function();
