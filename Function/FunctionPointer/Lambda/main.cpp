@@ -1,7 +1,12 @@
 ﻿#include <iostream>
+#include <functional> // C++ 11
 
 // 함수 포인터
+typedef void (*functionPointer)();
 void(*functionPointer)();
+using FP = void(*)();
+
+std::function<void()> newFunctionPointer;
 
 int main()
 {
@@ -24,10 +29,14 @@ int main()
 	functionPointer = []() {std::cout << "Hello" << '\n';};
 	functionPointer();
 
+	newFunctionPointer = functionPointer;
+
 	function();
 	function();
 	function();
 	function();
+
+	newFunctionPointer();
 
 	std::cout << "Count: " << count << '\n';
 }
