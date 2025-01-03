@@ -1,42 +1,40 @@
 ﻿#include <iostream>
-#include <functional> // C++ 11
+#include <functional>        // c++ 11.
 
-// 함수 포인터
+// 함수 포인터.
 typedef void (*functionPointer)();
-void(*functionPointer)();
-using FP = void(*)();
-
+using usingFP = void (*)();
 std::function<void()> newFunctionPointer;
 
 int main()
 {
-	// Lambda 함수 (무명 함수)
-	// 
-	// 선언하면서 호출
-	[]() {std::cout << "Hello Lambda.\n";}();
+    // Lamda 함수 (무명 함수).
+    // 선언하면서 호출.
+    //[]() { std::cout << "Hello Lamda.\n"; }();
 
-	// 변수에 저장
-	int count = 0;
-	auto function = [&count]() -> float // 명시적 선언
-		{
-			++count;
-			std::cout << "Hello Lambda.\n";
-			return 100;
-		};
-	// 호출
-	auto returnValue = function();
+    // 람다 함수 저장.
+    int count = 0;
+    auto function = [&count](/*int count*/) { ++count; };
 
-	functionPointer = []() {std::cout << "Hello" << '\n';};
-	functionPointer();
+    // 함수 포인터를 사용한 람다 저장.
+    functionPointer function2 = []() { std::cout << "Hello\n"; };
+    function2();
 
-	newFunctionPointer = functionPointer;
+    newFunctionPointer = function2;
+    newFunctionPointer();
 
-	function();
-	function();
-	function();
-	function();
+    // 호출.
+    //auto returnValue = function();
 
-	newFunctionPointer();
+    // CPU 자료를 GPU한테 넘기고 -> GPU가 그리기 -> 백버퍼(Backbuffer).
+    //   Backbuffer: 이미지 (Texture2D). -> Color[]
 
-	std::cout << "Count: " << count << '\n';
+    function();
+    function();
+    function();
+    function();
+
+    std::cout << "Count: " << count << "\n";
+
+    std::cin.get();
 }
