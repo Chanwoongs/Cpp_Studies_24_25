@@ -20,7 +20,7 @@ class Account
 public:
 	Account();
 	Account(int id, const char* name);
-	~Account();
+	virtual ~Account();
 
 	Account(const Account& other)
 	{
