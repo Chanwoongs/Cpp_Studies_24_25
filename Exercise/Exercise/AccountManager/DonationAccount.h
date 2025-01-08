@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include "Account.h"
 
@@ -6,8 +6,8 @@ class DonationAccount : public Account
 {
 public:
 	DonationAccount() : donationAmount(0) {}
-	DonationAccount(int id, const char* name)
-		: Account(id, name), donationAmount(0)
+	DonationAccount(int id, const char* name, AccountType type)
+		: Account(id, name, type), donationAmount(0)
 	{ }
 	~DonationAccount() {}
 
