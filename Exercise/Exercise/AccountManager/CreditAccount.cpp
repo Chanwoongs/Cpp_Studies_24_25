@@ -1,8 +1,8 @@
-#include "CreditAccount.h"
+ï»¿#include "CreditAccount.h"
 
 void CreditAccount::Deposit(int amount)
 {
-	this->balance += amount;
+    Account::Deposit(amount);
 
 	AddInterest();
 }
@@ -10,7 +10,7 @@ void CreditAccount::Deposit(int amount)
 void CreditAccount::AddInterest()
 {
 	int interest = (int)balance * 0.01;
-	this->balance += interest;
+	Account::Deposit(interest);
 	
-	std::cout << "ÀúÃàÇÑ ÀÌÀÚ : " << interest << '\n';
+	std::cout << "ì €ì¶•í•œ ì´ì : " << interest << '\n';
 }

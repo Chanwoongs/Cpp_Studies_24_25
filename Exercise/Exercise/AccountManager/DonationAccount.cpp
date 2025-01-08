@@ -1,13 +1,13 @@
-#include "DonationAccount.h"
+ï»¿#include "DonationAccount.h"
 
 void DonationAccount::Deposit(int amount)
 {
-	this->balance += amount;
+    Account::Deposit(amount);
 
 	int donationAmount = (int)balance * 0.01;
-	this->balance -= donationAmount;
+    Account::Withdrawal(donationAmount);
 
 	this->donationAmount += donationAmount;
 
-	std::cout << "ÀúÃàÇÑ ±Ý¾× : " << CheckBalance() << ", ±âºÎÇÑ ÃÑ ±Ý¾× : " << GetDonationAmount() << '\n';
+	std::cout << "ì €ì¶•í•œ ê¸ˆì•¡ : " << CheckBalance() << ", ê¸°ë¶€í•œ ì´ ê¸ˆì•¡ : " << GetDonationAmount() << '\n';
 }
