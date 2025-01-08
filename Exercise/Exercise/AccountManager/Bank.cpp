@@ -1,4 +1,4 @@
-#include "Bank.h"
+ï»¿#include "Bank.h"
 #include "CreditAccount.h"
 #include "DonationAccount.h"
 
@@ -33,11 +33,11 @@ void Bank::Deposit(int id, int amount)
 	{
 		this->accounts[id]->Deposit(amount);
 
-		std::cout << id << "¹ø °èÁÂ¿¡ " << amount << "¿ø ÀÔ±ÝÇß½À´Ï´Ù.\n";
+		std::cout << id << "ë²ˆ ê³„ì¢Œì— " << amount << "ì› ìž…ê¸ˆí–ˆìŠµë‹ˆë‹¤.\n";
 	}
 	else
 	{
-		std::cout << "°èÁÂ¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù.\n";
+		std::cout << "ê³„ì¢Œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.\n";
 	}
 }
 
@@ -47,11 +47,11 @@ void Bank::WithDraw(int id, int amount)
 	{
 		this->accounts[id]->Withdrawal(amount);
 
-		std::cout << id << "¹ø °èÁÂ¿¡¼­ " << amount << "¿ø Ãâ±ÝÇß½À´Ï´Ù. ÀÜ¾× : " << this->accounts[id]->CheckBalance() << '\n';
+		std::cout << id << "ë²ˆ ê³„ì¢Œì—ì„œ " << amount << "ì› ì¶œê¸ˆí–ˆìŠµë‹ˆë‹¤. ìž”ì•¡ : " << this->accounts[id]->CheckBalance() << '\n';
 	}
 	else
 	{
-		std::cout << "°èÁÂ¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù.\n";
+		std::cout << "ê³„ì¢Œë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.\n";
 	}
 }
 
@@ -75,14 +75,17 @@ void Bank::CreateAccount(AccountType accountType, const char* name)
 	}
 	this->accounts[id] = account;
 
-	std::cout << this->accounts[id]->GetName() << " °í°´´ÔÀÇ " << id << "¹ø °èÁÂ°¡ »ý¼ºµÇ¾ú½À´Ï´Ù\n";
-	id++;
+    if (this->accounts[id] != nullptr)
+    {
+        std::cout << this->accounts[id]->GetName() << " ê³ ê°ë‹˜ì˜ " << id << "ë²ˆ ê³„ì¢Œê°€ ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤\n";
+        id++;
+    }
 }
 
 void Bank::Inquire()
 {
 	for (int i = 0; i < id; i++)
 	{
-		std::cout << this->accounts[i]->GetName() << " °í°´´ÔÀÇ ÀÜ¾× : " << this->accounts[i]->CheckBalance() << '\n';
+		std::cout << this->accounts[i]->GetName() << " ê³ ê°ë‹˜ì˜ ìž”ì•¡ : " << this->accounts[i]->CheckBalance() << '\n';
 	}
 }
