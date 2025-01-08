@@ -62,13 +62,13 @@ void Bank::CreateAccount(AccountType accountType, const char* name)
 	switch (accountType)
 	{
 	case AccountType::Normal:
-		account = new Account(id, name);
+		account = new Account(id, name, AccountType::Normal);
 		break;
 	case AccountType::Credit:
-		account = new CreditAccount(id, name);
+		account = new CreditAccount(id, name, AccountType::Credit);
 		break;
 	case AccountType::Donation:
-		account = new DonationAccount(id, name);
+		account = new DonationAccount(id, name, AccountType::Donation);
 		break;
 	default:
 		break;
@@ -80,6 +80,45 @@ void Bank::CreateAccount(AccountType accountType, const char* name)
         std::cout << this->accounts[id]->GetName() << " 고객님의 " << id << "번 계좌가 생성되었습니다\n";
         id++;
     }
+}
+
+void Bank::SaveData()
+{
+    FILE* file = nullptr;
+    fopen_s(&file, "data.txt", "wt");
+
+    if (file == nullptr)
+    {
+        std::cout << "파일을 열 수 없어 저장이 불가능합니다.\n";
+        return;
+    }
+
+    for (int i = 0; i < id; ++i)
+    {
+        Account* account = accounts[i];
+        char buffer[256] = {' '};
+
+        if (dynamic_cast<CreditAccount*>(account))
+        {
+            std::snprintf(buffer, sizeof(buffer), "id: %d, name: %s, balance: %d, type: %s", i, accounts[i]->GetName(), accounts[i]->CheckBalance(), "Credit Account");
+            buffer[255] = '\n';
+            fwrite(buffer, 1, sizeof(buffer), file);
+        }
+        else if (dynamic_cast<DonationAccount*>(account))
+        {
+            std::snprintf(buffer, sizeof(buffer), "id: %d, name: %s, balance: %d, type: %s", i, accounts[i]->GetName(), accounts[i]->CheckBalance(), "Donation Account");
+            buffer[255] = '\n';
+            fwrite(buffer, 1, sizeof(buffer), file);
+        }
+        else
+        {
+            std::snprintf(buffer, sizeof(buffer), "id: %d, name: %s, balance: %d, type: %s", i, accounts[i]->GetName(), accounts[i]->CheckBalance(), "Normal Account");
+            buffer[255] = '\n';
+            fwrite(buffer, 1, sizeof(buffer), file);
+        }
+    }
+
+    fclose(file);
 }
 
 void Bank::Inquire()

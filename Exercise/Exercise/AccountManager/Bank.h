@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include "Account.h"
 #ifdef _DEBUG
@@ -21,6 +21,8 @@ public:
 	void Deposit(int id, int amount);
 	void WithDraw(int id, int amount);
 	void CreateAccount(AccountType accountType, const char* name);
+
+    void SaveData();
 
 	void Inquire();
 

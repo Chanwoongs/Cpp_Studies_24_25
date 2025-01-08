@@ -78,6 +78,8 @@ int main()
 		std::cout << "\n\n";
 	}
 
+    bank->SaveData();
+
 	delete bank;
 
 	_CrtSetReportMode(_CRT_WARN, _CRTDBG_MODE_DEBUG);

@@ -1,4 +1,4 @@
-#include "Account.h"
+﻿#include "Account.h"
 #include <iostream>
 
 #ifdef _DEBUG
@@ -6,12 +6,12 @@
 #endif
 
 Account::Account()
-    : id(-1), nameLength(-1), name(nullptr), balance(0)
+    : id(-1), nameLength(-1), name(nullptr), balance(0), type(type)
 {
 }
 
-Account::Account(int id, const char* name)
-    : id(id), balance(0)
+Account::Account(int id, const char* name, AccountType type)
+    : id(id), balance(0), type(type)
 {
     this->nameLength = strlen(name);
     this->name = new char[this->nameLength + 1];
@@ -29,6 +29,9 @@ Account::~Account()
 void Account::Deposit(int amount)
 {
     this->balance += amount;
+
+    FILE* file = nullptr;
+
 }
 
 void Account::Withdrawal(int amount)
