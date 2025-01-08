@@ -86,6 +86,22 @@ void Bank::Inquire()
 {
 	for (int i = 0; i < id; i++)
 	{
-		std::cout << this->accounts[i]->GetName() << " 고객님의 잔액 : " << this->accounts[i]->CheckBalance() << '\n';
+        if (this->accounts[i] == nullptr)
+        {
+            continue;
+        }
+
+        if (dynamic_cast<CreditAccount*>(this->accounts[i]))
+        {
+            std::cout << this->accounts[i]->GetName() << " 고객님의 이자 계좌 잔액 : " << this->accounts[i]->CheckBalance() << '\n';
+        }
+        else if (dynamic_cast<DonationAccount*>(this->accounts[i]))
+        {
+            std::cout << this->accounts[i]->GetName() << " 고객님의 기부 계좌 잔액 : " << this->accounts[i]->CheckBalance() << '\n';
+        }
+        else
+        {
+            std::cout << this->accounts[i]->GetName() << " 고객님의 일반 계좌 잔액 : " << this->accounts[i]->CheckBalance() << '\n';
+        }
 	}
 }
