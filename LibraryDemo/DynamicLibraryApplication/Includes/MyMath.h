@@ -1,7 +1,13 @@
 ﻿#pragma once
 
+#ifdef BUILD_DLL
+#define MATH_DLL __declspec(dllexport)
+#else
+#define MATH_DLL __declspec(dllimport)
+#endif
+
 // dllimport
-class __declspec(dllimport) Math
+class MATH_DLL Math
 {
 public:
     static int Add(int a, int b);
