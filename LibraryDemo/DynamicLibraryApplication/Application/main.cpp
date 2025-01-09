@@ -1,5 +1,7 @@
 ﻿#include <iostream>
 
+#pragma comment (lib, "Library.lib")
+
 #include "MyMath.h"
 
 int main()
