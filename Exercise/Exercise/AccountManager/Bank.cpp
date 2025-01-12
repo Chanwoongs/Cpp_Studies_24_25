@@ -101,20 +101,58 @@ void Bank::SaveData()
         if (dynamic_cast<CreditAccount*>(account))
         {
             std::snprintf(buffer, sizeof(buffer), "id: %d, name: %s, balance: %d, type: %s", i, accounts[i]->GetName(), accounts[i]->CheckBalance(), "Credit Account");
-            buffer[255] = '\n';
-            fwrite(buffer, 1, sizeof(buffer), file);
         }
         else if (dynamic_cast<DonationAccount*>(account))
         {
             std::snprintf(buffer, sizeof(buffer), "id: %d, name: %s, balance: %d, type: %s", i, accounts[i]->GetName(), accounts[i]->CheckBalance(), "Donation Account");
-            buffer[255] = '\n';
-            fwrite(buffer, 1, sizeof(buffer), file);
         }
         else
         {
             std::snprintf(buffer, sizeof(buffer), "id: %d, name: %s, balance: %d, type: %s", i, accounts[i]->GetName(), accounts[i]->CheckBalance(), "Normal Account");
-            buffer[255] = '\n';
-            fwrite(buffer, 1, sizeof(buffer), file);
+        }
+        fwrite(buffer, 1, sizeof(buffer), file);
+    }
+
+    fclose(file);
+}
+
+void Bank::LoadData()
+{
+    FILE* file = nullptr;
+    fopen_s(&file, "data.txt", "rt");
+
+    if (file == nullptr)
+    {
+        std::cout << "파일을 열 수 없어 데이터를 불러올 수 없습니다.\n";
+        return;
+    }
+
+    char buffer[256];
+    while (fgets(buffer, sizeof(buffer), file))
+    {
+        buffer[strcspn(buffer, "\r\n")] = '\0';
+
+        int id = 0;
+        char name[50];
+        int balance = 0;
+        char type[50];
+
+        if (sscanf_s(buffer, "id: %d, name: %s, balance: %d, type: %s", &id, name, 50, &balance, type, 50))
+        {
+            std::cout << id << ' ' << name << ' ' << balance << ' ' << type << '\n';
+
+            if (strcmp(type, "Credit Account") == 0)
+            {
+                CreateAccount(AccountType::Credit, name);
+            }
+            else if (strcmp(type, "Donation Account") == 0)
+            {
+                CreateAccount(AccountType::Donation, name);
+            }
+            else if (strcmp(type, "Normal Account") == 0)
+            {
+                CreateAccount(AccountType::Normal, name);
+            }
         }
     }
 

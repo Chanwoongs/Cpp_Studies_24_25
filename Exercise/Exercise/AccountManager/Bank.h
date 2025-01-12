@@ -23,6 +23,7 @@ public:
 	void CreateAccount(AccountType accountType, const char* name);
 
     void SaveData();
+	void LoadData();
 
 	void Inquire();
 

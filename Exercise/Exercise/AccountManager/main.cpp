@@ -21,6 +21,8 @@ int main()
 {
 	Bank* bank = new Bank();
 
+	bank->LoadData();
+
 	while (true)
 	{
 		std::cout << "원하는 기능의 번호를 입력하세요\n";
