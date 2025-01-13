@@ -100,15 +100,15 @@ void Bank::SaveData()
 
         if (dynamic_cast<CreditAccount*>(account))
         {
-            std::snprintf(buffer, sizeof(buffer), "id: %d, name: %s, balance: %d, type: %s", i, accounts[i]->GetName(), accounts[i]->CheckBalance(), "Credit Account");
+            std::snprintf(buffer, sizeof(buffer), "id: %d, name: %s, balance: %d, type: %s", i, accounts[i]->GetName(), accounts[i]->CheckBalance(), "Credit");
         }
         else if (dynamic_cast<DonationAccount*>(account))
         {
-            std::snprintf(buffer, sizeof(buffer), "id: %d, name: %s, balance: %d, type: %s", i, accounts[i]->GetName(), accounts[i]->CheckBalance(), "Donation Account");
+            std::snprintf(buffer, sizeof(buffer), "id: %d, name: %s, balance: %d, type: %s", i, accounts[i]->GetName(), accounts[i]->CheckBalance(), "Donation");
         }
         else
         {
-            std::snprintf(buffer, sizeof(buffer), "id: %d, name: %s, balance: %d, type: %s", i, accounts[i]->GetName(), accounts[i]->CheckBalance(), "Normal Account");
+            std::snprintf(buffer, sizeof(buffer), "id: %d, name: %s, balance: %d, type: %s", i, accounts[i]->GetName(), accounts[i]->CheckBalance(), "Normal");
         }
         fwrite(buffer, 1, sizeof(buffer), file);
     }
@@ -141,21 +141,86 @@ void Bank::LoadData()
         {
             std::cout << id << ' ' << name << ' ' << balance << ' ' << type << '\n';
 
-            if (strcmp(type, "Credit Account") == 0)
+            if (strcmp(type, "Credit") == 0)
             {
                 CreateAccount(AccountType::Credit, name);
             }
-            else if (strcmp(type, "Donation Account") == 0)
+            else if (strcmp(type, "Donation") == 0)
             {
                 CreateAccount(AccountType::Donation, name);
             }
-            else if (strcmp(type, "Normal Account") == 0)
+            else if (strcmp(type, "Normal") == 0)
             {
                 CreateAccount(AccountType::Normal, name);
             }
         }
     }
 
+    fclose(file);
+}
+
+void Bank::Save(const char* fileName)
+{
+    // 저장할 데이터 생성
+    char buffer[2048];
+    memset(buffer, 0, 2048);
+
+    for (int i = 0; i < id; ++i)
+    {
+        // 각 계좌별로 문자열 데이터로 직렬화
+        const char* data = accounts[i]->Serialize();
+        // 데이터 복사
+        strcat_s(buffer, data);
+        delete data;
+    }
+
+    // 파일 저장
+    FILE* file = nullptr;
+    fopen_s(&file, fileName, "wb");
+
+    if (file)
+    {
+        fwrite(buffer, strlen(buffer) + 1, 1, file);
+        fclose(file);
+    }
+};
+
+void Bank::Load(const char* fileName)
+{
+    // 파일 로드
+    FILE* file = nullptr;
+    fopen_s(&file, fileName, "rb");
+
+    if (file)
+    {
+        // 파일에서 읽은 데이터를 임시 저장할 버퍼
+        char buffer[256];
+
+        while (!feof(file))
+        {
+            // 한줄 씩 읽기
+            fgets(buffer, 256, file);
+            
+            int id = 0;;
+            char name[256];
+            int balance = 0;
+            char type[256];
+            sscanf_s(buffer, "id: %d, name: %s , balance: %d, type: %s \n", &id, name, 256, &balance, type, 256);
+
+            if (strcmp(type, "Credit") == 0)
+            {
+                CreateAccount(AccountType::Credit, name);
+            }
+            else if (strcmp(type, "Donation") == 0)
+            {
+                CreateAccount(AccountType::Donation, name);
+            }
+            else if (strcmp(type, "Normal") == 0)
+            {
+                CreateAccount(AccountType::Normal, name);
+            }
+        }
+    }
     fclose(file);
 }
 

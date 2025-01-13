@@ -13,6 +13,8 @@ public:
 
 	virtual void Deposit(int amount) override;
 
+    virtual const char* Serialize() override;
+
 	void AddInterest();
 };
 

@@ -25,6 +25,9 @@ public:
     void SaveData();
 	void LoadData();
 
+    void Save(const char* fileName);
+    void Load(const char* fileName);
+
 	void Inquire();
 
 private:

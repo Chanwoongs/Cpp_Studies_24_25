@@ -11,3 +11,13 @@ void DonationAccount::Deposit(int amount)
 
 	std::cout << "저축한 금액 : " << CheckBalance() << ", 기부한 총 금액 : " << GetDonationAmount() << '\n';
 }
+
+const char* DonationAccount::Serialize()
+{
+    char* buffer = new char[256];
+
+    snprintf(buffer, 256, "id: %d, name: %s , balance: %d, type: %s \n",
+        id, name, balance, "Donation");
+
+    return buffer;
+}

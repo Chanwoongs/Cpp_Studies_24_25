@@ -12,6 +12,7 @@ public:
 	~DonationAccount() {}
 
 	virtual void Deposit(int amount) override;
+    virtual const char* Serialize() override;
 
 	const int GetDonationAmount() const { return donationAmount; }
 

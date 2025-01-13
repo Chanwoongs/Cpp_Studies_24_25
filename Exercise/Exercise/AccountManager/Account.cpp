@@ -44,3 +44,13 @@ int Account::CheckBalance()
 {
     return this->balance;
 }
+
+const char* Account::Serialize()
+{
+    char* buffer = new char[256];
+
+    snprintf(buffer, 256, "id: %d, name: %s , balance: %d, type: %s \n",
+        id, name, balance, "Normal");
+
+    return buffer;
+}

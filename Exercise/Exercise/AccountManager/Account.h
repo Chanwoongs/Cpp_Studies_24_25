@@ -43,6 +43,9 @@ public:
 
 	int CheckBalance();
 
+    // 문자열 직렬화 함수
+    virtual const char* Serialize();
+
 protected:
 	int id;
 	char* name;
