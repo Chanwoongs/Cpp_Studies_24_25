@@ -205,7 +205,7 @@ void Bank::Load(const char* fileName)
             char name[256];
             int balance = 0;
             char type[256];
-            sscanf_s(buffer, "id: %d, name: %s , balance: %d, type: %s \n", &id, name, 256, &balance, type, 256);
+            sscanf_s(buffer, "id: %d, name: %[^,], balance: %d, type: %[^\n]\n", &id, name, 256, &balance, type, 256);
 
             if (strcmp(type, "Credit") == 0)
             {

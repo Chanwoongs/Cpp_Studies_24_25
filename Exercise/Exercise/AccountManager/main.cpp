@@ -21,7 +21,7 @@ int main()
 {
 	Bank* bank = new Bank();
 
-	bank->LoadData();
+	bank->Load("data.txt");
 
 	while (true)
 	{
@@ -80,7 +80,7 @@ int main()
 		std::cout << "\n\n";
 	}
 
-    bank->SaveData();
+    bank->Save("data.txt");
 
 	delete bank;
 
